@@ -1,0 +1,29 @@
+#List operation
+#USING FOR LOOP
+numbers = [12, 7, 9, 20, 15]
+
+print("Original list:", numbers)
+
+# Add element
+numbers.append(25)
+
+# Remove element
+numbers.remove(7)
+
+# Update element
+numbers[1] = 10
+
+print("Updated list:", numbers)
+
+# Searching an element
+search = 20
+found = False
+
+for i in range(len(numbers)):
+    if numbers[i] == search:
+        print("Element found at index", i)
+        found = True
+        break
+
+if not found:
+    print("Element not found")
